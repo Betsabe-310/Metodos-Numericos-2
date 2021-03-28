@@ -1,9 +1,9 @@
 /*newton
 Hecho por:
-Nuñez Ibañez Marte Betsabe
+Nu�ez Iba�ez Marte Betsabe
 Solis Vilchis Roberto Atonatiuh*/
 #include <stdio.h>
-#include <iostream>
+#include <stdlib.h>
 #include <math.h>
 
 double m_cofactor[10][10];
@@ -72,13 +72,11 @@ int main(){
             opcion=5;
             break;
         default:
-            printf("Esa opción no es valida intente de nuevo.");
+            printf("Esa opci�n no es valida intente de nuevo.");
             system("pause");
         }
         system("cls");
     }while(opcion!=5);
-    printf("Hecho por...\n\tNuñez Ibañez Marte Betsabe\n\tSolis Vilchis Roberto Atonatiuh");
-    
     return 0;
 }
 
@@ -164,24 +162,26 @@ void primerSistema(){
     puntos[0] = puntos2[0];
     puntos[1] = puntos2[1];
     if(error<tol){
+        printf("\n\n");
         printf("Fin por toleracia: \n");
-        printf("Iteraciones: %d\n", k+1);
+        printf("Iteraciones: %d\n", k);
         printf("error: %.8f\n", error);
         printf("puntos: x: %f y: %f", puntos2[0], puntos2[1]);
         break;
     }
     else if(it==k+1){
-        printf("Fin por Iteraciones: %d\n", k+1);
+        printf("\n\n");
+        printf("Fin por Iteraciones: %d\n", k);
         printf("error: %.8f\n", error);
         printf("puntos: x: %f y: %f", puntos2[0], puntos2[1]);
         break;
     }
     printf("\n\n");
-    printf("ITERACION: %d\n", k+1);
+    printf("ITERACION: %d\n", k);
     printf("ERROR: %.8f\n", error);
     printf("PUNTOS: x: %f y: %f\n", puntos2[0], puntos2[1]);
     }
-    printf("\n¿Quieres ingresar nuevos datos? s o n\n");
+    printf("\n�Quieres ingresar nuevos datos? s o n\n");
     fflush(stdin);
     scanf(" %c", &aux);
 
@@ -275,24 +275,26 @@ void segundoSistema(){
     puntos[0] = puntos2[0];
     puntos[1] = puntos2[1];
     if(error<tol){
+        printf("\n\n");
         printf("Fin por toleracia: \n");
-        printf("Iteraciones: %d\n", k+1);
+        printf("Iteraciones: %d\n", k);
         printf("error: %.8f\n", error);
         printf("puntos: x: %f y: %f", puntos2[0], puntos2[1]);
         break;
     }
     else if(it==k+1){
-        printf("Fin por Iteraciones: %d\n", k+1);
+        printf("\n\n");
+        printf("Fin por Iteraciones: %d\n", k);
         printf("error: %.8f\n", error);
         printf("puntos: x: %f y: %f", puntos2[0], puntos2[1]);
         break;
     }
     printf("\n\n");
-    printf("ITERACION: %d\n", k+1);
+    printf("ITERACION: %d\n", k);
     printf("ERROR: %.8f\n", error);
     printf("PUNTOS: x: %f y: %f\n", puntos2[0], puntos2[1]);
     }
-    printf("\n¿Quieres ingresar nuevos datos? s o n\n");
+    printf("\n�Quieres ingresar nuevos datos? s o n\n");
     fflush(stdin);
     scanf(" %c", &aux);
 
@@ -412,24 +414,26 @@ void tercerSistema(){
     puntos[2] = puntos2[2];
 
     if(error<tol){
+        printf("\n\n");
         printf("Fin por toleracia: \n");
-        printf("Iteraciones: %d\n", k+1);
+        printf("Iteraciones: %d\n", k);
         printf("error: %.8f\n", error);
         printf("puntos: x: %f y: %f z: %f", puntos2[0], puntos2[1], puntos2[2]);
         break;
     }
     else if(it==k+1){
-        printf("Fin por Iteraciones: %d\n", k+1);
+        printf("\n\n");
+        printf("Fin por Iteraciones: %d\n", k);
         printf("error: %.8f\n", error);
         printf("puntos: x: %f y: %f z: %f", puntos2[0], puntos2[1], puntos2[2]);
         break;
     }
     printf("\n\n");
-    printf("ITERACION: %d\n", k+1);
+    printf("ITERACION: %d\n", k);
     printf("ERROR: %.8f\n", error);
     printf("PUNTOS: x: %f y: %f z: %f\n", puntos2[0], puntos2[1], puntos2[2]);
     }
-    printf("\n¿Quieres ingresar nuevos datos? s o n\n");
+    printf("\n�Quieres ingresar nuevos datos? s o n\n");
     fflush(stdin);
     scanf(" %c", &aux);
 
@@ -549,24 +553,26 @@ void cuartoSistema(){
     puntos[2] = puntos2[2];
 
     if(error<tol){
+        printf("\n\n");
         printf("Fin por toleracia: \n");
-        printf("Iteraciones: %d\n", k+1);
+        printf("Iteraciones: %d\n", k);
         printf("error: %.8f\n", error);
         printf("puntos: x: %f y: %f z: %f", puntos2[0], puntos2[1], puntos2[2]);
         break;
     }
     else if(it==k+1){
-        printf("Fin por Iteraciones: %d\n", k+1);
+        printf("\n\n");
+        printf("Fin por Iteraciones: %d\n", k);
         printf("error: %.8f\n", error);
         printf("puntos: x: %f y: %f z: %f", puntos2[0], puntos2[1], puntos2[2]);
         break;
     }
     printf("\n\n");
-    printf("ITERACION: %d\n", k+1);
+    printf("ITERACION: %d\n", k);
     printf("ERROR: %.8f\n", error);
     printf("PUNTOS: x: %f y: %f z: %f\n", puntos2[0], puntos2[1], puntos2[2]);
     }
-    printf("\n¿Quieres ingresar nuevos datos? s o n\n");
+    printf("\n�Quieres ingresar nuevos datos? s o n\n");
     fflush(stdin);
     scanf(" %c", &aux);
 
