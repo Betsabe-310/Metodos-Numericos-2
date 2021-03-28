@@ -30,6 +30,8 @@ void cuartoSistema();
 int main(){
     int opcion=100;
     do{
+        printf("M%ctodos Num%cricos 2\n",130,130);
+        printf("Hecho por:\nN%c%cez Ib%c%cez Marta Betsabe\nSolis Vilchis Roberto Atonatiuh\n27-Mar-2020\n\n",163,164,160,164);
         printf("Metodo de Newton Rapson\n\n");
         printf("1. Sistema de ecuaciones:\n");
         printf("f1(x, y) = x^2+xy-10=0\n");
