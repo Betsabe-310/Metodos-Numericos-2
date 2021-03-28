@@ -1,6 +1,6 @@
 /*newton
 Hecho por:
-Nuñez Ibañez Marte Betsabe
+Nuñez Ibañez Marta Betsabe
 Solis Vilchis Roberto Atonatiuh*/
 #include <stdio.h>
 #include <stdlib.h>
