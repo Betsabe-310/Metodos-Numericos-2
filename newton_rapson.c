@@ -1,5 +1,9 @@
-//newton
+/*newton
+Hecho por:
+Nuñez Ibañez Marte Betsabe
+Solis Vilchis Roberto Atonatiuh*/
 #include <stdio.h>
+#include <iostream>
 #include <math.h>
 
 double m_cofactor[10][10];
@@ -68,11 +72,13 @@ int main(){
             opcion=5;
             break;
         default:
-            printf("Esa opci�n no es valida intente de nuevo.");
+            printf("Esa opción no es valida intente de nuevo.");
             system("pause");
         }
         system("cls");
     }while(opcion!=5);
+    printf("Hecho por...\n\tNuñez Ibañez Marte Betsabe\n\tSolis Vilchis Roberto Atonatiuh");
+    
     return 0;
 }
 
@@ -175,7 +181,7 @@ void primerSistema(){
     printf("ERROR: %.8f\n", error);
     printf("PUNTOS: x: %f y: %f\n", puntos2[0], puntos2[1]);
     }
-    printf("\n�Quieres ingresar nuevos datos? s o n\n");
+    printf("\n¿Quieres ingresar nuevos datos? s o n\n");
     fflush(stdin);
     scanf(" %c", &aux);
 
@@ -286,7 +292,7 @@ void segundoSistema(){
     printf("ERROR: %.8f\n", error);
     printf("PUNTOS: x: %f y: %f\n", puntos2[0], puntos2[1]);
     }
-    printf("\n�Quieres ingresar nuevos datos? s o n\n");
+    printf("\n¿Quieres ingresar nuevos datos? s o n\n");
     fflush(stdin);
     scanf(" %c", &aux);
 
@@ -423,7 +429,7 @@ void tercerSistema(){
     printf("ERROR: %.8f\n", error);
     printf("PUNTOS: x: %f y: %f z: %f\n", puntos2[0], puntos2[1], puntos2[2]);
     }
-    printf("\n�Quieres ingresar nuevos datos? s o n\n");
+    printf("\n¿Quieres ingresar nuevos datos? s o n\n");
     fflush(stdin);
     scanf(" %c", &aux);
 
@@ -560,7 +566,7 @@ void cuartoSistema(){
     printf("ERROR: %.8f\n", error);
     printf("PUNTOS: x: %f y: %f z: %f\n", puntos2[0], puntos2[1], puntos2[2]);
     }
-    printf("\n�Quieres ingresar nuevos datos? s o n\n");
+    printf("\n¿Quieres ingresar nuevos datos? s o n\n");
     fflush(stdin);
     scanf(" %c", &aux);
 
