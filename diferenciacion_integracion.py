@@ -8,9 +8,9 @@ def menu():
     print("Marta Betsabe Núñez Ibáñez")
     print("Solis Vilchis Roberto Atonatiuh")
     print("1. Leer datos")
-    print("2. Diferenciación")
+    print("2. Diferenciación Centrada")
     print("3. Integración")
-    print("4. Salir")
+    print("4. Regresar al menú principal")
 
 
 def espaciado(x):
@@ -155,7 +155,8 @@ def dif_int_main(x=[], y=[]):
         elif opcion == 4:
             print("Hasta Pronto...")
             sleep(1.5)
-            return 0
+            return x, y
+    return x, y
 
 
 #y = [0.96079, 0.75910, 0.48554, 0.25142, 0.10540]
@@ -163,4 +164,5 @@ def dif_int_main(x=[], y=[]):
 # diff
 #y = [0.18096748, 0.25821239, 0.3274923, 0.38940039]
 #x = [0.2, 0.3, 0.4, 0.5]
-dif_int_main()
+if __name__ == "__main__":
+    dif_int_main()
